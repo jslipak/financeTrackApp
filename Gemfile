@@ -5,6 +5,11 @@ ruby '2.7.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
+# Auth User
+gem 'devise' 
+gem 'jquery-rails' 
+gem 'twitter-bootstrap-rails'
+
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -44,6 +49,7 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
+  gem 'sqlite3', '~> 1.4'
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
@@ -54,5 +60,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do
-  gem 'pg', '~> 0.11'
+  gem 'pg'
 end
