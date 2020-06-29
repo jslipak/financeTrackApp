@@ -27,7 +27,7 @@ require("jquery")
     // })
 
 $(document).ready(function() {
-    $('button.close').click(function() {
+    $('.close').click(function() {
             $('.alert').removeClass('in').addClass('out')
         })
         // $('#stock-lookup-form').on('ajax:complete', function(event, data, status) {
